@@ -9,6 +9,8 @@
 @import "footer";
 
 .background {
+  position: relative;
   background: $dBlue2;
+  z-index: -30;
 }
 @import "mediaQs";

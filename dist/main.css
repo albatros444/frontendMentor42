@@ -80,7 +80,7 @@ header .menu a {
 
 .hero {
   height: 1140px;
-  background: bottom url(/images/bg-curvy-desktop.svg) hsl(217, 28%, 15%) no-repeat;
+  background: bottom/contain url(/images/bg-curvy-desktop.svg) hsl(217, 28%, 15%) no-repeat;
   text-align: center;
   color: hsl(0, 0%, 100%);
 }
@@ -348,20 +348,172 @@ footer .socialLinks .circle svg {
 }
 
 .background {
+  position: relative;
   background: hsl(218, 28%, 13%);
+  z-index: -30;
 }
 
-header {
-  padding: 25px 22px;
-}
-header img {
-  height: 25px;
-}
-header .menu {
-  width: 165px;
-}
-header .menu a {
-  font-size: 12px;
+@media screen and (max-width: 500px) {
+  header {
+    padding: 25px 22px 50px;
+  }
+  header img {
+    height: 25px;
+  }
+  header .menu {
+    width: 165px;
+  }
+  header .menu a {
+    font-size: 12px;
+  }
+  .hero {
+    position: relative;
+    height: auto;
+    z-index: -20;
+    background: hsl(217, 28%, 15%);
+    margin-bottom: 100px;
+  }
+  .hero:before {
+    position: absolute;
+    content: "";
+    background: bottom/cover url(/images/bg-curvy-mobile.svg) no-repeat;
+    z-index: -10;
+    height: 45.33vw;
+    top: 50.66vw;
+    left: 0;
+    right: 0;
+  }
+  .hero:after {
+    position: absolute;
+    content: "";
+    background: hsl(218, 28%, 13%);
+    z-index: -10;
+    height: 350px;
+    top: 96vw;
+    left: 0;
+    right: 0;
+  }
+  .hero img {
+    height: 58.66vw;
+  }
+  .hero h1 {
+    width: 100%;
+    font-size: 25px;
+    padding: 0 30px;
+  }
+  .hero p {
+    width: 100%;
+    padding: 0 37px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .hero button {
+    width: 250px;
+    height: 47px;
+    font-size: 14px;
+  }
+  .features {
+    display: block;
+    width: 100%;
+  }
+  .features img {
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .features p {
+    padding: 0 30px;
+  }
+  .stayProductive {
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .stayProductive img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .stayProductive .box h2 {
+    width: 100%;
+    font-size: 19px;
+  }
+  .stayProductive .box p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .stayProductive .box a {
+    font-size: 12px;
+  }
+  .credentials {
+    display: block;
+    padding: 0 45px;
+  }
+  .credentials .credential {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    font-size: 12px;
+  }
+  .getEarlyAccess {
+    width: auto;
+    height: auto;
+    margin: 0 20px -170px;
+    padding: 40px 30px;
+  }
+  .getEarlyAccess h2 {
+    font-size: 18px;
+  }
+  .getEarlyAccess p {
+    width: 100%;
+  }
+  .getEarlyAccess form {
+    display: block;
+  }
+  .getEarlyAccess form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .getEarlyAccess form button {
+    width: 100%;
+  }
+  footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 90px 115px 50px 90px 190px 180px 60px;
+    padding: 180px 20px 20px;
+  }
+  footer .footerLogo {
+    grid-column: 1/2;
+  }
+  footer p:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  footer p:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: start;
+  }
+  footer p:nth-child(4) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    justify-self: start;
+  }
+  footer .links1 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    justify-self: start;
+  }
+  footer .links2 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    justify-self: start;
+  }
+  footer .socialLinks {
+    grid-row: 7/8;
+    grid-column: 1/2;
+    width: 110px;
+    justify-self: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

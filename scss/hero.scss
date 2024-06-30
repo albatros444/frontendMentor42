@@ -17,7 +17,7 @@ header {
 }
 .hero {
   height: 1140px;
-  background: bottom url(/images/bg-curvy-desktop.svg) $dBlue no-repeat;
+  background: bottom/contain url(/images/bg-curvy-desktop.svg) $dBlue no-repeat;
   text-align: center;
   color: $white;
   img {
