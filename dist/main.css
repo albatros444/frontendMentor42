@@ -16,7 +16,7 @@ body {
   padding: 0;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  /* //position: relative; ///for footer with absolute position --> */
+  position: relative;
 }
 body h1,
 body h2,
@@ -58,6 +58,310 @@ ul {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 75px;
+  background-color: hsl(217, 28%, 15%);
+}
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+}
+header .menu a {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.hero {
+  height: 1140px;
+  background: bottom url(/images/bg-curvy-desktop.svg) hsl(217, 28%, 15%) no-repeat;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.hero img {
+  display: block;
+  margin: 0 auto 38px;
+}
+.hero h1 {
+  width: 680px;
+  margin: 0 auto 40px;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+}
+.hero p {
+  width: 600px;
+  margin: 0 auto 30px;
+  font-size: 20px;
+}
+.hero button {
+  display: inline-block;
+  width: 280px;
+  height: 55px;
+  padding: 0;
+  border: none;
+  border-radius: 55px;
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: hsl(0, 0%, 100%);
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 880px;
+  margin: 0 auto;
+  color: hsl(0, 0%, 100%);
+}
+.features .feature {
+  width: 360px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.features .feature h3 {
+  margin-bottom: 10px;
+}
+.features .feature p {
+  line-height: 1.5;
+}
+
+.stayProductive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 105px;
+}
+.stayProductive .box {
+  color: hsl(0, 0%, 100%);
+}
+.stayProductive .box h2 {
+  width: 350px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+}
+.stayProductive .box p {
+  width: 550px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.stayProductive .box a {
+  position: relative;
+  right: 0;
+  top: -4px;
+  padding: 0 20px 4px 0;
+  font-size: 16px;
+  color: hsl(176, 68%, 64%);
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.stayProductive .box a::after {
+  position: absolute;
+  content: url(/images/icon-arrow.svg);
+}
+
+.credentials {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  margin-bottom: 200px;
+}
+.credentials .credential {
+  width: 360px;
+  height: 200px;
+  padding: 40px 25px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 30%, 18%);
+}
+.credentials .credential .credText {
+  margin-bottom: 15px;
+}
+.credentials .credential .personInfo {
+  display: flex;
+}
+.credentials .credential .personInfo img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.credentials .credential .personInfo .box p:nth-child(1) {
+  font-size: 11px;
+  font-weight: 600;
+}
+.credentials .credential .personInfo .box p:nth-child(2) {
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.getEarlyAccess {
+  position: relative;
+  width: 860px;
+  height: 270px;
+  margin: 0 auto -100px;
+  padding: 40px 70px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px hsl(216, 53%, 7%);
+  text-align: center;
+  z-index: 50;
+  background-color: hsl(217, 28%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.getEarlyAccess h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.getEarlyAccess p {
+  width: 630px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.getEarlyAccess form {
+  display: flex;
+  justify-content: space-between;
+}
+.getEarlyAccess form input {
+  width: 480px;
+  height: 45px;
+  border-radius: 45px;
+  padding: 0 30px;
+  border: none;
+}
+.getEarlyAccess form input::placeholder {
+  letter-spacing: -0.02em;
+  color: hsla(217, 28%, 15%, 0.5);
+}
+.getEarlyAccess form button {
+  display: inline-block;
+  width: 200px;
+  height: 45px;
+  padding: 0;
+  border: none;
+  border-radius: 55px;
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 370px minmax(180px, auto) minmax(125px, auto) minmax(125px, auto) 119px;
+  grid-template-rows: 85px 40px 40px auto;
+  padding: 200px 80px 95px 115px;
+  background-color: hsl(216, 53%, 9%);
+  color: hsl(0, 0%, 100%);
+}
+footer .footerLogo {
+  grid-column: 1/6;
+  grid-row: 0/1;
+}
+footer p:nth-child(2) {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 2/5;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+footer p:nth-child(2)::before {
+  position: absolute;
+  content: url(/images/icon-location.svg);
+  left: 0;
+  top: 7px;
+}
+footer p:nth-child(3) {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
+  padding: 0 47px;
+}
+footer p:nth-child(3)::before {
+  position: absolute;
+  content: url(/images/icon-phone.svg);
+  left: 0;
+  top: 7px;
+}
+footer p:nth-child(4) {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: end;
+  padding: 0 40px;
+}
+footer p:nth-child(4)::before {
+  position: absolute;
+  content: url(/images/icon-email.svg);
+  left: 0;
+  top: 7px;
+}
+footer .links a {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 16px;
+}
+footer .links1 {
+  grid-row: 2/5;
+  justify-self: end;
+  padding-right: 40px;
+}
+footer .links2 {
+  grid-row: 2/5;
+  justify-self: center;
+  padding-right: 65px;
+}
+footer .socialLinks {
+  display: flex;
+  justify-content: space-between;
+}
+footer .socialLinks .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+footer .socialLinks .circle svg {
+  width: 13px;
+  height: 13px;
+  fill: white;
+}
+
+.background {
+  background: hsl(218, 28%, 13%);
+}
+
+header {
+  padding: 25px 22px;
+}
+header img {
+  height: 25px;
+}
+header .menu {
+  width: 165px;
+}
+header .menu a {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */

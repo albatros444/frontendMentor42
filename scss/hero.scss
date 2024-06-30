@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 75px;
+  background-color: $dBlue;
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    a {
+      color: $white;
+      font-family: $raleway;
+      font-size: 16px;
+    }
+  }
+}
+.hero {
+  height: 1140px;
+  background: bottom url(/images/bg-curvy-desktop.svg) $dBlue no-repeat;
+  text-align: center;
+  color: $white;
+  img {
+    display: block;
+    margin: 0 auto 38px;
+  }
+  h1 {
+    width: 680px;
+    margin: 0 auto 40px;
+    font-size: 40px;
+    font-family: $raleway;
+  }
+  p {
+    width: 600px;
+    margin: 0 auto 30px;
+    font-size: 20px;
+  }
+  button {
+    display: inline-block;
+    width: 280px;
+    height: 55px;
+    padding: 0;
+    border: none;
+    border-radius: 55px;
+    outline: inherit;
+    cursor: pointer;
+    font-family: $raleway;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(to right, $cyan, $blue);
+    color: $white;
+  }
+}

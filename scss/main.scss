@@ -1,2 +1,14 @@
 @import "globals";
 @import "attribution";
+@import "variables";
+@import "hero";
+@import "features";
+@import "stayProductive";
+@import "credentials";
+@import "getEarlyAccess";
+@import "footer";
+
+.background {
+  background: $dBlue2;
+}
+@import "mediaQs";
