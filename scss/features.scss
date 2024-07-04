@@ -3,13 +3,24 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 880px;
-  margin: 0 auto;
+  margin: -30px auto 0;
   color: $white;
   .feature {
     width: 360px;
     margin-bottom: 80px;
     text-align: center;
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      margin-bottom: 20px;
+
+      img {
+      }
+    }
     h3 {
+      font-size: 20px;
       margin-bottom: 10px;
     }
     p {

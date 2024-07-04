@@ -33,15 +33,10 @@
       z-index: -10;
       height: 350px; //170px;
       top: 96vw; //190px;
-
       left: 0;
       right: 0;
     }
-
     background: $dBlue;
-    // background: url(/images/bg-curvy-mobile.svg) 0% 45% / 100% no-repeat,
-    //   linear-gradient($dBlue2, $dBlue2) 0% bottom / 100% calc(47% - 15px)
-    //     no-repeat $dBlue;
     margin-bottom: 100px;
     img {
       height: 58.66vw; //220px;

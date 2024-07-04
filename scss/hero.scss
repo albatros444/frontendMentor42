@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 75px 75px;
+  padding: 73px 77px;
   background-color: $dBlue;
   .menu {
     display: flex;
@@ -16,24 +16,26 @@ header {
   }
 }
 .hero {
-  height: 1140px;
+  height: 1100px;
   background: bottom/contain url(/images/bg-curvy-desktop.svg) $dBlue no-repeat;
   text-align: center;
   color: $white;
   img {
     display: block;
-    margin: 0 auto 38px;
+    margin: 0 auto 36px;
   }
   h1 {
     width: 680px;
-    margin: 0 auto 40px;
+    margin: 0 auto 34px;
     font-size: 40px;
     font-family: $raleway;
+    line-height: 1.5;
   }
   p {
     width: 600px;
-    margin: 0 auto 30px;
+    margin: 0 auto 32px;
     font-size: 20px;
+    line-height: 1.5;
   }
   button {
     display: inline-block;

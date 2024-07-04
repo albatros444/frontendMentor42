@@ -47,7 +47,9 @@
       <section class="features">
         <!-- ///feature1/// -->
         <div class="feature">
-          <img src="images/icon-access-anywhere.svg" alt="" />
+          <div class="box">
+            <img src="images/icon-access-anywhere.svg" alt="" />
+          </div>
           <h3>Access your files, anywhere</h3>
           <p>
             The ability to use a smartphone, tablet, or computer to access your
@@ -56,7 +58,8 @@
         </div>
         <!-- ///feature2// -->
         <div class="feature">
-          <img src="images/icon-security.svg" alt="" />
+          <div class="box"><img src="images/icon-security.svg" alt="" /></div>
+
           <h3>Security you can trust</h3>
           <p>
             2-factor authentication and user-controlled encryption are just a
@@ -65,15 +68,20 @@
         </div>
         <!-- feature 3 -->
         <div class="feature">
-          <img src="images/icon-collaboration.svg" alt="" />
+          <div class="box">
+            <img src="images/icon-collaboration.svg" alt="" />
+          </div>
+
           <h3>Real-time collaboration</h3>
           <p>
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
         </div>
+        <!-- //feature 4 -->
         <div class="feature">
-          <img src="images/icon-any-file.svg" alt="" />
+          <div class="box"><img src="images/icon-any-file.svg" alt="" /></div>
+
           <h3>Store any type of file</h3>
           <p>
             Whether you're sharing holidays photos or work documents, Fylo has
@@ -95,7 +103,48 @@
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <a>See how Fylo works </a>
+          <div class="linkWithArrow">
+            <a>See how Fylo works </a>
+            <svg
+              width="16"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <circle id="b" cx="6" cy="6" r="6" />
+                <filter
+                  x="-25%"
+                  y="-25%"
+                  width="150%"
+                  height="150%"
+                  filterUnits="objectBoundingBox"
+                  id="a"
+                >
+                  <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                  <feGaussianBlur
+                    stdDeviation="1"
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                  />
+                  <feColorMatrix
+                    values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                    in="shadowBlurOuter1"
+                  />
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(2 2)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                  <use xlink:href="#b" />
+                </g>
+                <path
+                  d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                  fill="#1B2330"
+                />
+              </g>
+            </svg>
+          </div>
         </div>
       </section>
       <section class="credentials">
@@ -153,10 +202,18 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <form>
-          <input type="email" placeholder="email@example.com" />
-          <button>Get Started For Free</button>
+        <!-- ////form// -->
+        <form class="form">
+          <input
+            type="email"
+            class="emailField"
+            placeholder="email@example.com"
+            required
+          />
+          <button class="signUpButton">Get Started For Free</button>
+          <p class="errorMessage">Please enter a valid email address</p>
         </form>
+        <!-- //// -->
       </div>
       <!-- footer///////////// -->
       <footer>
@@ -271,4 +328,5 @@
       >. Coded by <a href="#">Batenkin Alexander</a>.
     </p>
   </body>
+  <script src="index.js"></script>
 </html>

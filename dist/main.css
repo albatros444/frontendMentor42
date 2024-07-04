@@ -63,7 +63,7 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 75px 75px;
+  padding: 73px 77px;
   background-color: hsl(217, 28%, 15%);
 }
 header .menu {
@@ -79,25 +79,27 @@ header .menu a {
 }
 
 .hero {
-  height: 1140px;
+  height: 1100px;
   background: bottom/contain url(/images/bg-curvy-desktop.svg) hsl(217, 28%, 15%) no-repeat;
   text-align: center;
   color: hsl(0, 0%, 100%);
 }
 .hero img {
   display: block;
-  margin: 0 auto 38px;
+  margin: 0 auto 36px;
 }
 .hero h1 {
   width: 680px;
-  margin: 0 auto 40px;
+  margin: 0 auto 34px;
   font-size: 40px;
   font-family: "Raleway", sans-serif;
+  line-height: 1.5;
 }
 .hero p {
   width: 600px;
-  margin: 0 auto 30px;
+  margin: 0 auto 32px;
   font-size: 20px;
+  line-height: 1.5;
 }
 .hero button {
   display: inline-block;
@@ -122,7 +124,7 @@ header .menu a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 880px;
-  margin: 0 auto;
+  margin: -30px auto 0;
   color: hsl(0, 0%, 100%);
 }
 .features .feature {
@@ -130,7 +132,15 @@ header .menu a {
   margin-bottom: 80px;
   text-align: center;
 }
+.features .feature .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 20px;
+}
 .features .feature h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .features .feature p {
@@ -141,9 +151,10 @@ header .menu a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 105px;
+  padding: 57px 115px 190px 105px;
 }
 .stayProductive .box {
+  padding-top: 60px;
   color: hsl(0, 0%, 100%);
 }
 .stayProductive .box h2 {
@@ -151,31 +162,52 @@ header .menu a {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-size: 40px;
+  line-height: 1.25;
 }
 .stayProductive .box p {
   width: 550px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: 16px;
+  line-height: 1.5;
 }
-.stayProductive .box a {
-  position: relative;
+.stayProductive .box .linkWithArrow {
+  display: flex;
+  align-items: center;
+  width: 167px;
+  margin-top: 25px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  transition: all 0.13s ease-in-out;
+}
+.stayProductive .box .linkWithArrow a {
   right: 0;
   top: -4px;
-  padding: 0 20px 4px 0;
+  padding-right: 5px;
   font-size: 16px;
   color: hsl(176, 68%, 64%);
-  border-bottom: 1px solid hsl(176, 68%, 64%);
+  transition: all 0.13s ease-in-out;
 }
-.stayProductive .box a::after {
-  position: absolute;
-  content: url(/images/icon-arrow.svg);
+.stayProductive .box .linkWithArrow svg g g {
+  transition: all 0.13s ease-in-out;
+  fill: #62e0d9;
+}
+.stayProductive .box .linkWithArrow:hover {
+  border-bottom: 1px solid white;
+}
+.stayProductive .box .linkWithArrow:hover a {
+  color: white;
+}
+.stayProductive .box .linkWithArrow:hover svg g g {
+  fill: white;
 }
 
 .credentials {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 0 140px;
   margin-bottom: 200px;
+  z-index: 10;
 }
 .credentials .credential {
   width: 360px;
@@ -184,44 +216,60 @@ header .menu a {
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(219, 30%, 18%);
+  box-shadow: 7px 7px 10px hsl(217, 28%, 15%);
 }
 .credentials .credential .credText {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
 }
 .credentials .credential .personInfo {
   display: flex;
 }
 .credentials .credential .personInfo img {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 3px;
 }
 .credentials .credential .personInfo .box p:nth-child(1) {
   font-size: 11px;
   font-weight: 600;
+  margin-bottom: 2px;
 }
 .credentials .credential .personInfo .box p:nth-child(2) {
   font-size: 8px;
   font-weight: 300;
+}
+.credentials .credential:nth-child(1) {
+  position: relative;
+}
+.credentials .credential:nth-child(1)::before {
+  content: url(/images/bg-quotes.png);
+  position: absolute;
+  top: -34px;
+  left: -10px;
+  z-index: -10;
 }
 
 .getEarlyAccess {
   position: relative;
   width: 860px;
   height: 270px;
-  margin: 0 auto -100px;
-  padding: 40px 70px;
+  margin: 0 auto -115px;
+  padding: 45px 75px;
   border-radius: 10px;
-  box-shadow: 5px 5px 20px hsl(216, 53%, 7%);
   text-align: center;
   z-index: 50;
   background-color: hsl(217, 28%, 15%);
   color: hsl(0, 0%, 100%);
+  box-shadow: 7px 7px 7px hsla(216, 53%, 7%, 0.5);
 }
 .getEarlyAccess h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  margin-bottom: 22px;
 }
 .getEarlyAccess p {
   width: 630px;
@@ -229,6 +277,7 @@ header .menu a {
   margin-bottom: 40px;
 }
 .getEarlyAccess form {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -260,12 +309,22 @@ header .menu a {
   background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   color: hsl(0, 0%, 100%);
 }
+.getEarlyAccess form .errorMessage {
+  position: absolute;
+  display: none;
+  top: 50px;
+  left: 40px;
+  font-size: 10px;
+  font-weight: 600;
+  color: hsl(0, 100%, 63%);
+  text-align: left;
+}
 
 footer {
   display: grid;
   grid-template-columns: 370px minmax(180px, auto) minmax(125px, auto) minmax(125px, auto) 119px;
   grid-template-rows: 85px 40px 40px auto;
-  padding: 200px 80px 95px 115px;
+  padding: 200px 80px 80px 118px;
   background-color: hsl(216, 53%, 9%);
   color: hsl(0, 0%, 100%);
 }
@@ -292,25 +351,25 @@ footer p:nth-child(3) {
   grid-column: 2/3;
   grid-row: 2/3;
   justify-self: end;
-  padding: 0 47px;
+  padding: 3px 47px 0;
 }
 footer p:nth-child(3)::before {
   position: absolute;
   content: url(/images/icon-phone.svg);
   left: 0;
-  top: 7px;
+  top: 5px;
 }
 footer p:nth-child(4) {
   position: relative;
   grid-column: 2/3;
   grid-row: 3/4;
   justify-self: end;
-  padding: 0 40px;
+  padding: 3px 37px 0 40px;
 }
 footer p:nth-child(4)::before {
   position: absolute;
   content: url(/images/icon-email.svg);
-  left: 0;
+  left: -3px;
   top: 7px;
 }
 footer .links a {
@@ -336,8 +395,8 @@ footer .socialLinks .circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -350,7 +409,6 @@ footer .socialLinks .circle svg {
 .background {
   position: relative;
   background: hsl(218, 28%, 13%);
-  z-index: -30;
 }
 
 @media screen and (max-width: 500px) {

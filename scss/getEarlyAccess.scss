@@ -2,17 +2,18 @@
   position: relative;
   width: 860px;
   height: 270px;
-  margin: 0 auto -100px;
-  padding: 40px 70px;
+  margin: 0 auto -115px;
+  padding: 45px 75px;
   border-radius: 10px;
-  box-shadow: 5px 5px 20px hsl(216, 53%, 7%);
   text-align: center;
   z-index: 50;
   background-color: $dBlue;
   color: $white;
+  box-shadow: 7px 7px 7px hsl(216, 53%, 7%, 50%);
   h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-family: $raleway;
+    font-size: 32px;
+    margin-bottom: 22px;
   }
   p {
     width: 630px;
@@ -20,14 +21,17 @@
     margin-bottom: 40px;
   }
   form {
+    position: relative;
     display: flex;
     justify-content: space-between;
+
     input {
       width: 480px;
       height: 45px;
       border-radius: 45px;
       padding: 0 30px;
       border: none;
+
       &::placeholder {
         letter-spacing: -0.02em;
         color: hsl(217, 28%, 15%, 50%);
@@ -49,6 +53,17 @@
       text-decoration: none;
       background: linear-gradient(to right, $cyan, $blue);
       color: $white;
+    }
+    .errorMessage {
+      position: absolute;
+      display: none;
+      top: 50px;
+      left: 40px;
+      font-size: 10px;
+      font-weight: 600;
+      // letter-spacing: -0.03em;
+      color: $lRed;
+      text-align: left;
     }
   }
 }

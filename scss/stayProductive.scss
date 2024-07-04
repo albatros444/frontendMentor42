@@ -2,32 +2,59 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 105px;
+  padding: 57px 115px 190px 105px;
   .box {
+    padding-top: 60px;
     color: $white;
     h2 {
       width: 350px;
       margin-bottom: 20px;
       font-family: $raleway;
       font-size: 40px;
+      line-height: 1.25;
     }
     p {
       width: 550px;
-      margin-bottom: 20px;
+      margin-bottom: 17px;
       font-size: 16px;
+      line-height: 1.5;
     }
-    a {
-      position: relative;
-      right: 0;
-      top: -4px;
-      padding: 0 20px 4px 0;
-      font-size: 16px;
-      color: $cyan;
+    .linkWithArrow {
+      display: flex;
+      align-items: center;
+      width: 167px;
+      margin-top: 25px;
+      padding-bottom: 3px;
       border-bottom: 1px solid $cyan;
-
-      &::after {
-        position: absolute;
-        content: url(/images/icon-arrow.svg);
+      transition: all 0.13s ease-in-out;
+      a {
+        right: 0;
+        top: -4px;
+        padding-right: 5px;
+        font-size: 16px;
+        color: $cyan;
+        transition: all 0.13s ease-in-out;
+      }
+      svg {
+        g {
+          g {
+            transition: all 0.13s ease-in-out;
+            fill: #62e0d9;
+          }
+        }
+      }
+      &:hover {
+        border-bottom: 1px solid white;
+        a {
+          color: white;
+        }
+        svg {
+          g {
+            g {
+              fill: white;
+            }
+          }
+        }
       }
     }
   }
