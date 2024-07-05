@@ -8,8 +8,12 @@
 @import "getEarlyAccess";
 @import "footer";
 
+body {
+  z-index: -40;
+}
 .background {
   position: relative;
   background: $dBlue2;
+  z-index: -30;
 }
 @import "mediaQs";
