@@ -27,8 +27,8 @@
 
     input {
       width: 480px;
-      height: 45px;
-      border-radius: 45px;
+      height: 47px;
+      border-radius: 47px;
       padding: 0 35px;
       border: none;
       font-family: $openSans;
@@ -39,27 +39,45 @@
       }
     }
     button {
+      position: relative;
       display: inline-block;
       width: 200px;
-      height: 45px;
+      height: 47px;
       padding: 0;
       border: none;
-      border-radius: 55px;
+      border-radius: 47px;
       outline: inherit;
+      overflow: hidden;
+
       cursor: pointer;
       font-family: $raleway;
       font-size: 14px;
       font-weight: 600;
       text-align: center;
       text-decoration: none;
-      background: linear-gradient(to right, $cyan, $blue);
+      background: white;
+
       color: $white;
+      &:before {
+        position: absolute;
+        content: "Get Started For Free";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 14px;
+        background: linear-gradient(to right, $cyan, $blue);
+        transition: all 0.14s ease-in-out;
+      }
+      &:hover:before {
+        opacity: 0.6;
+      }
     }
     .errorMessage {
       position: absolute;
       display: none;
       top: 50px;
-      left: 40px;
+      left: 36px;
       font-size: 10px;
       font-weight: 600;
       // letter-spacing: -0.03em;

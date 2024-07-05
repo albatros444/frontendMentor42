@@ -37,7 +37,6 @@ footer {
       grid-row: 2/3;
       justify-self: end;
       padding: 3px 47px 0;
-
       &::before {
         position: absolute;
         content: url(/images/icon-phone.svg);
@@ -65,22 +64,33 @@ footer {
       display: block;
       margin-bottom: 17px;
       font-size: 16px;
+      color: hsl(0, 0%, 100%, 90%);
+      transition: all 0.13s ease-in-out;
+      &:hover {
+        color: white;
+        font-weight: 700;
+      }
     }
   }
   .links1 {
     grid-row: 2 / 5;
     justify-self: end;
     padding-right: 40px;
+    a {
+      width: 75px;
+    }
   }
   .links2 {
     grid-row: 2 / 5;
     justify-self: center;
     padding-right: 65px;
+    a {
+      width: 87px;
+    }
   }
   .socialLinks {
     display: flex;
     justify-content: space-between;
-
     .circle {
       display: flex;
       justify-content: center;
@@ -88,11 +98,20 @@ footer {
       width: 30px;
       height: 30px;
       border-radius: 50%;
+      cursor: pointer;
       border: 1px solid white;
+      transition: all 0.13s ease-in-out;
       svg {
         width: 13px;
         height: 13px;
         fill: white;
+        transition: all 0.13s ease-in-out;
+      }
+      &:hover {
+        border: 1px solid $cyan;
+        svg {
+          fill: $cyan;
+        }
       }
     }
   }
