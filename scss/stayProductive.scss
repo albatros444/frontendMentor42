@@ -1,10 +1,13 @@
 .stayProductive {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 57px 115px 190px 105px;
+  padding: 57px 115px 175px 105px;
+  img {
+    margin-right: 57px;
+  }
   .box {
-    padding-top: 60px;
+    padding-top: 50px;
     color: $white;
     h2 {
       width: 350px;
@@ -29,14 +32,13 @@
       border-bottom: 1px solid $cyan;
       transition: all 0.13s ease-in-out;
       a {
-        right: 0;
-        top: -4px;
         padding-right: 5px;
         font-size: 16px;
         color: $cyan;
         transition: all 0.13s ease-in-out;
       }
       svg {
+        margin-top: 2px;
         g {
           g {
             transition: all 0.13s ease-in-out;

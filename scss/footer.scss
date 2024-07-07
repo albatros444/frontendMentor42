@@ -2,12 +2,15 @@ footer {
   ///grid
   display: grid;
   grid-template-columns:
-    370px minmax(180px, auto) minmax(125px, auto) minmax(125px, auto)
+    minmax(300px, 410px) minmax(180px, auto) minmax(125px, auto) minmax(
+      125px,
+      auto
+    )
     119px;
   grid-template-rows: 85px 40px 40px auto;
 
   /////////
-  padding: 200px 80px 80px 118px;
+  padding: 200px 5.55vw 80px 8.19vw; //118px 80px
   background-color: $dBlue3;
   color: $white;
   .footerLogo {
@@ -21,6 +24,7 @@ footer {
       grid-column: 1/2;
       grid-row: 2/5;
       padding-left: 40px;
+      padding-right: 40px;
       font-size: 16px;
       line-height: 1.5;
       &::before {
@@ -36,7 +40,7 @@ footer {
       grid-column: 2/3;
       grid-row: 2/3;
       justify-self: end;
-      padding: 3px 47px 0;
+      padding: 3px 67px 0 47px;
       &::before {
         position: absolute;
         content: url(/images/icon-phone.svg);
@@ -50,7 +54,7 @@ footer {
       grid-column: 2/3;
       grid-row: 3/4;
       justify-self: end;
-      padding: 3px 37px 0 40px;
+      padding: 3px 57px 0 40px;
       &::before {
         position: absolute;
         content: url(/images/icon-email.svg);
