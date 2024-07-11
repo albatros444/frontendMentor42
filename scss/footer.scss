@@ -1,120 +1,121 @@
 footer {
-  ///grid
-  display: grid;
-  grid-template-columns:
-    minmax(300px, 410px) minmax(180px, auto) minmax(125px, auto) minmax(
-      125px,
-      auto
-    )
-    119px;
-  grid-template-rows: 85px 40px 40px auto;
-
   /////////
   padding: 200px 5.55vw 80px 8.19vw; //118px 80px
   background-color: $dBlue3;
   color: $white;
-  .footerLogo {
-    grid-column: 1 / 6;
-    grid-row: 0/1;
-  }
-  p {
-    ///1 column lorem
-    &:nth-child(2) {
-      position: relative;
-      grid-column: 1/2;
-      grid-row: 2/5;
-      padding-left: 40px;
-      padding-right: 40px;
-      font-size: 16px;
-      line-height: 1.5;
-      &::before {
-        position: absolute;
-        content: url(/images/icon-location.svg);
-        left: 0;
-        top: 7px;
+  .footerBox {
+    ///grid
+    display: grid;
+    grid-template-columns:
+      minmax(300px, 410px) minmax(180px, auto) minmax(125px, auto) minmax(
+        125px,
+        auto
+      )
+      119px;
+    grid-template-rows: 85px 40px 40px auto;
+    .footerLogo {
+      grid-column: 1 / 6;
+      grid-row: 0/1;
+    }
+    p {
+      ///1 column lorem
+      &:nth-child(2) {
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 2/5;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 16px;
+        line-height: 1.5;
+        &::before {
+          position: absolute;
+          content: url(/images/icon-location.svg);
+          left: 0;
+          top: 7px;
+        }
+      }
+      // 2nd column phone
+      &:nth-child(3) {
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: end;
+        padding: 3px 67px 0 47px;
+        &::before {
+          position: absolute;
+          content: url(/images/icon-phone.svg);
+          left: 0;
+          top: 5px;
+        }
+      }
+      // 2nd column email
+      &:nth-child(4) {
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-self: end;
+        padding: 3px 57px 0 40px;
+        &::before {
+          position: absolute;
+          content: url(/images/icon-email.svg);
+          left: -3px;
+          top: 7px;
+        }
       }
     }
-    // 2nd column phone
-    &:nth-child(3) {
-      position: relative;
-      grid-column: 2/3;
-      grid-row: 2/3;
-      justify-self: end;
-      padding: 3px 67px 0 47px;
-      &::before {
-        position: absolute;
-        content: url(/images/icon-phone.svg);
-        left: 0;
-        top: 5px;
-      }
-    }
-    // 2nd column email
-    &:nth-child(4) {
-      position: relative;
-      grid-column: 2/3;
-      grid-row: 3/4;
-      justify-self: end;
-      padding: 3px 57px 0 40px;
-      &::before {
-        position: absolute;
-        content: url(/images/icon-email.svg);
-        left: -3px;
-        top: 7px;
-      }
-    }
-  }
-  .links {
-    a {
-      display: block;
-      margin-bottom: 17px;
-      font-size: 16px;
-      color: hsl(0, 0%, 100%, 90%);
-      transition: all 0.13s ease-in-out;
-      &:hover {
-        color: white;
-        font-weight: 700;
-      }
-    }
-  }
-  .links1 {
-    grid-row: 2 / 5;
-    justify-self: end;
-    padding-right: 40px;
-    a {
-      width: 75px;
-    }
-  }
-  .links2 {
-    grid-row: 2 / 5;
-    justify-self: center;
-    padding-right: 65px;
-    a {
-      width: 87px;
-    }
-  }
-  .socialLinks {
-    display: flex;
-    justify-content: space-between;
-    .circle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      cursor: pointer;
-      border: 1px solid white;
-      transition: all 0.13s ease-in-out;
-      svg {
-        width: 13px;
-        height: 13px;
-        fill: white;
+    .links {
+      a {
+        display: block;
+        margin-bottom: 17px;
+        font-size: 16px;
+        color: hsl(0, 0%, 100%, 90%);
         transition: all 0.13s ease-in-out;
+        &:hover {
+          color: white;
+          font-weight: 700;
+        }
       }
-      &:hover {
-        border: 1px solid $cyan;
+    }
+    .links1 {
+      grid-row: 2 / 5;
+      justify-self: end;
+      padding-right: 40px;
+      a {
+        width: 75px;
+      }
+    }
+    .links2 {
+      grid-row: 2 / 5;
+      justify-self: center;
+      padding-right: 65px;
+      a {
+        width: 87px;
+      }
+    }
+    .socialLinks {
+      display: flex;
+      justify-content: space-between;
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid white;
+        transition: all 0.13s ease-in-out;
         svg {
-          fill: $cyan;
+          width: 13px;
+          height: 13px;
+          fill: white;
+          transition: all 0.13s ease-in-out;
+        }
+        &:hover {
+          border: 1px solid $cyan;
+          svg {
+            fill: $cyan;
+          }
         }
       }
     }

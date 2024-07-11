@@ -48,7 +48,6 @@
       border-radius: 47px;
       outline: inherit;
       overflow: hidden;
-
       cursor: pointer;
       font-family: $raleway;
       font-size: 14px;
@@ -65,7 +64,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        padding-top: 14px;
+        padding-top: 15px;
         background: linear-gradient(to right, $cyan, $blue);
         transition: all 0.14s ease-in-out;
       }

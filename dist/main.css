@@ -61,34 +61,36 @@ ul {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   padding: 5.06vw 5.35vw 77px;
   background-color: hsl(217, 28%, 15%);
 }
-header .menu {
+header .headerBox {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerBox .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 270px;
 }
-header .menu a {
+header .headerBox .menu a {
   position: relative;
   color: hsla(0, 0%, 100%, 0.85);
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   transition: all 0.2s ease-in-out;
 }
-header .menu a:nth-child(1) {
+header .headerBox .menu a:nth-child(1) {
   width: 67px;
 }
-header .menu a:nth-child(2) {
+header .headerBox .menu a:nth-child(2) {
   width: 42px;
 }
-header .menu a:nth-child(3) {
+header .headerBox .menu a:nth-child(3) {
   width: 52px;
 }
-header .menu a:after {
+header .headerBox .menu a:after {
   content: "";
   display: block;
   position: absolute;
@@ -99,10 +101,10 @@ header .menu a:after {
   transition: transform 0.2s ease-in-out;
   transform: scale(0);
 }
-header .menu a:hover::after {
+header .headerBox .menu a:hover::after {
   transform: scale(1);
 }
-header .menu a:hover {
+header .headerBox .menu a:hover {
   font-weight: 600;
   color: white;
 }
@@ -263,7 +265,7 @@ header .menu a:hover {
   display: flex;
   justify-content: space-between;
   padding: 0 9.72vw;
-  margin-bottom: 200px;
+  margin: 0 auto 200px;
   z-index: 10;
 }
 .credentials .credential {
@@ -382,7 +384,7 @@ header .menu a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 14px;
+  padding-top: 15px;
   background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   transition: all 0.14s ease-in-out;
 }
@@ -401,18 +403,20 @@ header .menu a:hover {
 }
 
 footer {
-  display: grid;
-  grid-template-columns: minmax(300px, 410px) minmax(180px, auto) minmax(125px, auto) minmax(125px, auto) 119px;
-  grid-template-rows: 85px 40px 40px auto;
   padding: 200px 5.55vw 80px 8.19vw;
   background-color: hsl(216, 53%, 9%);
   color: hsl(0, 0%, 100%);
 }
-footer .footerLogo {
+footer .footerBox {
+  display: grid;
+  grid-template-columns: minmax(300px, 410px) minmax(180px, auto) minmax(125px, auto) minmax(125px, auto) 119px;
+  grid-template-rows: 85px 40px 40px auto;
+}
+footer .footerBox .footerLogo {
   grid-column: 1/6;
   grid-row: 0/1;
 }
-footer p:nth-child(2) {
+footer .footerBox p:nth-child(2) {
   position: relative;
   grid-column: 1/2;
   grid-row: 2/5;
@@ -421,70 +425,70 @@ footer p:nth-child(2) {
   font-size: 16px;
   line-height: 1.5;
 }
-footer p:nth-child(2)::before {
+footer .footerBox p:nth-child(2)::before {
   position: absolute;
   content: url(/images/icon-location.svg);
   left: 0;
   top: 7px;
 }
-footer p:nth-child(3) {
+footer .footerBox p:nth-child(3) {
   position: relative;
   grid-column: 2/3;
   grid-row: 2/3;
   justify-self: end;
   padding: 3px 67px 0 47px;
 }
-footer p:nth-child(3)::before {
+footer .footerBox p:nth-child(3)::before {
   position: absolute;
   content: url(/images/icon-phone.svg);
   left: 0;
   top: 5px;
 }
-footer p:nth-child(4) {
+footer .footerBox p:nth-child(4) {
   position: relative;
   grid-column: 2/3;
   grid-row: 3/4;
   justify-self: end;
   padding: 3px 57px 0 40px;
 }
-footer p:nth-child(4)::before {
+footer .footerBox p:nth-child(4)::before {
   position: absolute;
   content: url(/images/icon-email.svg);
   left: -3px;
   top: 7px;
 }
-footer .links a {
+footer .footerBox .links a {
   display: block;
   margin-bottom: 17px;
   font-size: 16px;
   color: hsla(0, 0%, 100%, 0.9);
   transition: all 0.13s ease-in-out;
 }
-footer .links a:hover {
+footer .footerBox .links a:hover {
   color: white;
   font-weight: 700;
 }
-footer .links1 {
+footer .footerBox .links1 {
   grid-row: 2/5;
   justify-self: end;
   padding-right: 40px;
 }
-footer .links1 a {
+footer .footerBox .links1 a {
   width: 75px;
 }
-footer .links2 {
+footer .footerBox .links2 {
   grid-row: 2/5;
   justify-self: center;
   padding-right: 65px;
 }
-footer .links2 a {
+footer .footerBox .links2 a {
   width: 87px;
 }
-footer .socialLinks {
+footer .footerBox .socialLinks {
   display: flex;
   justify-content: space-between;
 }
-footer .socialLinks .circle {
+footer .footerBox .socialLinks .circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,16 +499,16 @@ footer .socialLinks .circle {
   border: 1px solid white;
   transition: all 0.13s ease-in-out;
 }
-footer .socialLinks .circle svg {
+footer .footerBox .socialLinks .circle svg {
   width: 13px;
   height: 13px;
   fill: white;
   transition: all 0.13s ease-in-out;
 }
-footer .socialLinks .circle:hover {
+footer .footerBox .socialLinks .circle:hover {
   border: 1px solid hsl(176, 68%, 64%);
 }
-footer .socialLinks .circle:hover svg {
+footer .footerBox .socialLinks .circle:hover svg {
   fill: hsl(176, 68%, 64%);
 }
 
@@ -526,24 +530,24 @@ body {
   header {
     padding: 25px 5vw 50px;
   }
-  header img {
+  header .headerBox img {
     height: 6.4vw;
     max-height: 30px;
   }
-  header .menu {
+  header .headerBox .menu {
     width: 170px;
   }
-  header .menu a {
+  header .headerBox .menu a {
     font-size: 12px;
     padding-bottom: 2px;
   }
-  header .menu a:nth-child(1) {
+  header .headerBox .menu a:nth-child(1) {
     width: 50px;
   }
-  header .menu a:nth-child(2) {
+  header .headerBox .menu a:nth-child(2) {
     width: 33px;
   }
-  header .menu a:nth-child(3) {
+  header .headerBox .menu a:nth-child(3) {
     width: 40px;
   }
   .hero {
@@ -606,6 +610,8 @@ body {
     margin-bottom: 130px;
   }
   .features .feature {
+    width: 100%;
+    max-width: 360px;
     margin: 0 auto 75px;
   }
   .features .feature h3 {
@@ -737,26 +743,29 @@ body {
     top: 45px;
   }
   footer {
-    grid-template-columns: 100%;
-    grid-template-rows: 93px 110px 40px 107px 190px 180px 60px;
     padding: 243px 7.46vw 10px;
   }
-  footer .footerLogo {
+  footer .footerBox {
+    grid-template-columns: 100%;
+    grid-template-rows: 93px auto 40px 107px 190px 180px 60px;
+  }
+  footer .footerBox .footerLogo {
     grid-column: 1/2;
     padding-left: 10px;
   }
-  footer p:nth-child(2) {
+  footer .footerBox p:nth-child(2) {
     padding-right: 0px;
+    padding-bottom: 15px;
     grid-row: 2/3;
     grid-column: 1/2;
   }
-  footer p:nth-child(3) {
+  footer .footerBox p:nth-child(3) {
     grid-row: 3/4;
     grid-column: 1/2;
     justify-self: start;
     padding-left: 40px;
   }
-  footer p:nth-child(3)::before {
+  footer .footerBox p:nth-child(3)::before {
     content: "";
     background-image: url(/images/icon-phone.svg);
     background-size: 13px 13px;
@@ -764,32 +773,32 @@ body {
     height: 13px;
     left: 3px;
   }
-  footer p:nth-child(4) {
+  footer .footerBox p:nth-child(4) {
     grid-row: 4/5;
     grid-column: 1/2;
     justify-self: start;
   }
-  footer p:nth-child(4):before {
+  footer .footerBox p:nth-child(4):before {
     left: 0;
   }
-  footer .links1 {
+  footer .footerBox .links1 {
     grid-row: 5/6;
     grid-column: 1/2;
     justify-self: start;
   }
-  footer .links2 {
+  footer .footerBox .links2 {
     grid-row: 6/7;
     grid-column: 1/2;
     justify-self: start;
   }
-  footer .socialLinks {
+  footer .footerBox .socialLinks {
     grid-row: 7/8;
     grid-column: 1/2;
     width: 105px;
     height: 30px;
     justify-self: center;
   }
-  footer .socialLinks .circle {
+  footer .footerBox .socialLinks .circle {
     width: 27px;
     height: 27px;
     border: 1px solid hsla(0, 0%, 100%, 0.7);
@@ -831,6 +840,9 @@ body {
     width: 400px;
     margin: 0 auto 30px;
   }
+  .credentials .credential:nth-child(3) {
+    margin-right: auto;
+  }
   .getEarlyAccess {
     width: 620px;
     height: auto;
@@ -853,41 +865,43 @@ body {
   }
   footer {
     padding-top: 270px;
+  }
+  footer .footerBox {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 85px 40px 150px 200px auto;
   }
-  footer .footerLogo {
+  footer .footerBox .footerLogo {
     grid-column: 1/5;
     grid-row: 1/2;
   }
-  footer p:nth-child(2) {
+  footer .footerBox p:nth-child(2) {
     padding-right: 40px;
     grid-column: 1/3;
     grid-row: 2/4;
   }
-  footer p:nth-child(3) {
+  footer .footerBox p:nth-child(3) {
     justify-self: center;
     grid-column: 3/5;
     grid-row: 2/3;
   }
-  footer p:nth-child(4) {
+  footer .footerBox p:nth-child(4) {
     justify-self: center;
     grid-column: 3/5;
     grid-row: 3/4;
   }
-  footer .links1 {
+  footer .footerBox .links1 {
     justify-self: start;
     padding-left: 40px;
     grid-column: 2/3;
     grid-row: 4/5;
   }
-  footer .links2 {
+  footer .footerBox .links2 {
     justify-self: start;
     padding-left: 40px;
     grid-column: 3/4;
     grid-row: 4/5;
   }
-  footer .socialLinks {
+  footer .footerBox .socialLinks {
     justify-self: center;
     width: 119px;
     grid-column: 1/5;
@@ -912,6 +926,20 @@ body {
     top: 300px;
     left: 0;
     right: 0;
+  }
+}
+@media screen and (min-width: 1500px) {
+  header .headerBox {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+  .credentials {
+    max-width: 1600px;
+    padding: 0 170px;
+  }
+  footer .footerBox {
+    margin: 0 auto;
+    max-width: 1600px;
   }
 }
 

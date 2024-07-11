@@ -1,0 +1,18 @@
+@media screen and (min-width: 1500px) {
+  header {
+    .headerBox {
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+  }
+  .credentials {
+    max-width: 1600px;
+    padding: 0 170px;
+  }
+  footer {
+    .footerBox {
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+  }
+}
